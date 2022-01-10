@@ -1,0 +1,15 @@
+.tampilanKanan{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    // background-color: rebeccapurple;
+    height: 100vh;
+    background: url("../../../Assets/Img/SplitBill.jpg");
+    background-size: cover;
+
+    img{
+        height: 100vh;
+        width: fit-content;
+    }
+}
