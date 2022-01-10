@@ -11,7 +11,7 @@ function App() {
         <Route path="/SplitPage">
           <Page3/>
        </Route>
-         <Route path="/UserPage">
+         <Route path="/Dasboard">
             <Page2/>
           </Route>
           <Route path="/">

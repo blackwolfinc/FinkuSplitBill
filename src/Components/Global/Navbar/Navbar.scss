@@ -1,0 +1,21 @@
+.NavbarBackground {
+   
+    background-color: #fff;
+    margin: 0rem 0rem 0.3rem 0rem ;
+    padding: 1rem 2rem;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    font-style: none;
+
+    a{
+        // font-style: oblique;
+        text-decoration: none;
+        color: #023047;
+        text-transform: uppercase
+    }
+}
+
+.MuiAppBar-colorPrimary{
+    background-color: #023047 !important;
+}

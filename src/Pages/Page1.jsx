@@ -6,22 +6,19 @@ import { Navbar } from "../Components/Global/Navbar/Navbar";
 import { Grid } from "@material-ui/core";
 import { TampilanKanan } from "./Page1Components/TampilanKanan";
 import { TampilanKiri } from "./Page1Components/TampilanKiri";
-import "./Page1Components/Page1.scss"
+import "./Page1Components/Page1.scss";
 
 export const Page1 = () => {
   return (
     <div className="page1-Container">
-        <Grid container direction="row-reverse">
-          <Grid item xs={4}>
-
-            <TampilanKiri/>
-          </Grid>
-          <Grid item xs={8}>
-      
-            <TampilanKanan />
-          </Grid>
+      <Grid container direction="row-reverse">
+        <Grid item xs={12} md={4}>
+          <TampilanKiri />
         </Grid>
- 
+        <Grid item xs={12} md={8}>
+          <TampilanKanan />
+        </Grid>
+      </Grid>
     </div>
   );
 };
