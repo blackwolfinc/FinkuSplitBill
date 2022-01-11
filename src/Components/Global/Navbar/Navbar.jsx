@@ -6,9 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import Switch from "@material-ui/core/Switch";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormGroup from "@material-ui/core/FormGroup";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import React from "react";
@@ -112,12 +109,12 @@ export const Navbar = () => {
             <Grid container spacing={5}>
               <Grid item xs={12} md={3}>
                 <li>
-                  <a href="/UserPage">Dasboard</a>
+                  <a href="/Dasboard">Dasboard</a>
                 </li>
               </Grid>
               <Grid item xs={12} md={3}>
                 <li>
-                  <a href="/UserPage">Add New Friend List</a>
+                  <a href="/addNewFriend">Add New Friend List</a>
                 </li>
               </Grid>
 

@@ -1,0 +1,33 @@
+[
+    {
+        "id": "S1",
+        "Username": "Andi",
+        "status": 0,
+        "FriendWhit": [1 ,2 ,3],
+        "Trans" : ["T1" ,"T2" ,"T3"]
+    },
+    {
+        "id": "S2",
+        "Username": "Budi",
+        "status": 0,
+        "FriendWhit": [1,2 ,3],
+        "Trans" : ["T1" ,"T2"]
+  
+    },
+    {
+        "id": "S3",
+        "Username": "Sari",
+        "status": 0,
+        "FriendWhit": [1,2 ,3],
+        "Trans" : ["T1" ,"T2"]
+    },
+    {
+        "id": "S4",
+        "Username": "Niken",
+        "status": 0,
+        "FriendWhit": [1,2 ,3],
+        "Trans" : ["T2", "T3"]
+
+    }
+    
+]

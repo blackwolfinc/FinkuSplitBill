@@ -4,13 +4,13 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Navbar } from '../Components/Global/Navbar/Navbar';
 import { TampilanKanan } from './Page1Components/TampilanKanan';
+import { Bodypage3 } from './Page3Components/Bodypage3';
 
 export const Page3 = () => {
     return (
         <div>
             <Navbar/>
-            Split page
-            <TampilanKanan/>
+            <Bodypage3/>
         </div>
     )
 }

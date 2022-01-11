@@ -1,17 +1,26 @@
-import { FormControl, Grid } from "@material-ui/core";
-import { useHistory } from "react-router-dom";
+
 
 import React, { useEffect, useState } from "react";
+import { FormControl, Grid } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
+import DataUserJson from "../../Assets/Json/User.json"
+import UserSplit from "../../Assets/Json/UserSplit.json"
+import Split from "../../Assets/Json/Split.json"
+import Trans from "../../Assets/Json/Trans.json"
 import "./Scss/TampilanKiri.scss";
 
 export const TampilanKiri = () => {
   let history = useHistory();
+  const [DataUser, setDataUser] = useState(DataUserJson)
+  const [DataUserSplit, setUserSplit] = useState(UserSplit)
+  const [DataSplit, setSplit] = useState(Split)
+  const [Datarans, setTrans] = useState(Trans)
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
 
 
 useEffect(() => {
- 
+ console.log(DataUser)
 }, [])
 
 
@@ -23,22 +32,29 @@ useEffect(() => {
     } else {
       setpassword(e.target.value);
     }
-    console.log(password);
-    console.log(username);
   };
 
   const HandelSubmit = () => {
-    if (username === "admin" && password === "admin") {
-      history.push("/Dasboard");
-      SetupLocalStorage()
-    }
+
+      DataUser.map((User)=>{
+    
+        if (username === User.Username && password === User.Pass) {
+          history.push("/Dasboard");
+          SetupLocalStorage(User)
+        }
+      })
+
+
   };
 
-  const SetupLocalStorage =()=>{
+  const SetupLocalStorage =(e)=>{
     // let LastValue = window.localStorage.getItem('user');
-    let Valuehandle = {"User": username , "Pass" : password  }
+
+    let Valuehandle = {"User": username , "Pass" : password  , "Id" :e.id  }
     window.localStorage.setItem("DataUser" , JSON.stringify(Valuehandle) )
-    console.log(window.localStorage.getItem('DataUser'))
+    window.localStorage.setItem("DataUserSplit" , JSON.stringify(DataUserSplit) )
+    window.localStorage.setItem("DataSplit" , JSON.stringify(DataSplit) )
+    window.localStorage.setItem("Trans" , JSON.stringify(Datarans) )
   }
 
 

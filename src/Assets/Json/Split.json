@@ -1,0 +1,72 @@
+[
+    {
+        "id": "SP1",
+        "TransId": "T1",
+        "SplitId": "S1",
+        "AmountSplit": 0,
+        "status": 0
+    },
+    {
+        "id": "SP2",
+        "TransId": "T1",
+        "SplitId": "S2",
+        "AmountSplit": 0,
+        "status": 0
+  
+    },
+    {
+        "id": "SP3",
+        "TransId": "T1",
+        "SplitId": "S3",
+        "AmountSplit": 0,
+        "status": 0
+
+    },
+    {
+        "id": "SP4",
+        "TransId": "T2",
+        "SplitId": "S1",
+        "AmountSplit": 0,
+        "status": 0
+    },
+    {
+        "id": "SP5",
+        "TransId": "T2",
+        "SplitId": "S2",
+        "AmountSplit": 0,
+        "status": 0
+  
+    },
+    {
+        "id": "SP6",
+        "TransId": "T2",
+        "SplitId": "S3",
+        "AmountSplit": 0,
+        "status": 0
+
+    },  {
+        "id": "SP7",
+        "TransId": "T2",
+        "SplitId": "S4",
+        "AmountSplit": 0,
+        "status": 0
+
+    }
+    ,  {
+        "id": "SP8",
+        "TransId": "T3",
+        "SplitId": "S1",
+        "AmountSplit": 0,
+        "status": 0
+
+    }
+    ,  {
+        "id": "SP9",
+        "TransId": "T3",
+        "SplitId": "S4",
+        "AmountSplit": 0,
+        "status": 0
+
+    }
+ 
+]

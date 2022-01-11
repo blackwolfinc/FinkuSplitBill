@@ -6,16 +6,17 @@ export default class ApexChart extends Component {
     super(props);
 
     this.state = {
-
-      series: [44, 55, 13, 33],
+      dataPush : props.Data ,
+      LableFrist : props.Lable ,
+      series: [],
+      
       options: {
         chart: {
           width: 380,
           type: 'donut',
         },
-        dataLabels: {
-          enabled: false
-        },
+     
+        labels: (props.Lable  ? props.Lable  : []),
         responsive: [{
           breakpoint: 480,
           options: {
@@ -39,39 +40,23 @@ export default class ApexChart extends Component {
   }
 
 
-  appendData() {
-    var arr = this.state.series.slice()
-    arr.push(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
+  componentDidMount(){
+      let ArrayNow = []
+      let lableThis =[]
+    this.state.dataPush.map((Data)=>{
+      ArrayNow.push(Data.UserSplit.length)
+      lableThis.push(Data.name)
+    })
 
     this.setState({
-      series: arr
-    })
+      labels:lableThis,
+      series: ArrayNow
+ 
+    });
+
+    console.log("lable ",this.state.LableFrist)
   }
 
-  removeData() {
-    if (this.state.series.length === 1) return
-
-    var arr = this.state.series.slice()
-    arr.pop()
-
-    this.setState({
-      series: arr
-    })
-  }
-
-  randomize() {
-    this.setState({
-      series: this.state.series.map(function () {
-        return Math.floor(Math.random() * (100 - 1 + 1)) + 1
-      })
-    })
-  }
-
-  reset() {
-    this.setState({
-      series: [44, 55, 13, 33]
-    })
-  }
 
 
   render() {
@@ -79,13 +64,13 @@ export default class ApexChart extends Component {
 
 
       <div>
-        <div class="chart-wrap">
+        <div className="chart-wrap">
           <div id="chart">
             <Chart options={this.state.options} series={this.state.series} type="donut" width={380} />
           </div>
         </div>
 
-        <div class="actions">
+        {/* <div class="actions">
           <button
 
             onClick={() => this.appendData()}
@@ -113,7 +98,7 @@ export default class ApexChart extends Component {
           >
             RESET
           </button>
-        </div>
+        </div> */}
       </div>
     )
   }

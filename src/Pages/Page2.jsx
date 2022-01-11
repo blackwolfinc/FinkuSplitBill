@@ -14,7 +14,7 @@ export const Page2 = () => {
         <Grid item xs={12} md={8}>
           <TampilanPage2Kanan />
         </Grid>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <TampilanPage2Kiri />
         </Grid>
       </Grid>

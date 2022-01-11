@@ -1,0 +1,26 @@
+[
+    {
+        "id": "T1",
+        "name": "Cafe A",
+        "UserCreate": [1],
+        "UserSplit": ["SP1", "SP2" ,"SP3"],
+        "status": 1
+    },
+    {
+        "id": "T2",
+        "name": "Cafe B",
+        "UserCreate": [2],
+        "UserSplit": ["SP4" ,"SP5" ,"SP6", "SP7"],
+        "status": 0
+  
+    },
+    {
+        "id": "T3",
+        "name": "Cave C",
+        "UserCreate": [3],
+        "UserSplit": ["SP8" ,"SP9"],
+        "status": 0
+
+    }
+ 
+]
